@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+    id 'kotlin-kapt'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+
+    // Retrofit converter
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+    // Moshi
+    implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
+
+    // kapt
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+
+    // Test Junit
+    testImplementation 'junit:junit:4.+'
+}
