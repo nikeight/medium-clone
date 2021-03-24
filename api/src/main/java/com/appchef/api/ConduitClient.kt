@@ -8,7 +8,6 @@ class ConduitClient {
 
     val retrofit = Retrofit.Builder()
         .baseUrl("https://conduit.productionready.io/api/")
-            // creating a factory here
         .addConverterFactory(MoshiConverterFactory.create())
         .build()
 

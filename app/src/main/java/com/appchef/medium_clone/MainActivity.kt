@@ -1,6 +1,7 @@
 package com.appchef.medium_clone
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar

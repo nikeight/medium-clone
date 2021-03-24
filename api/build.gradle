@@ -26,4 +26,7 @@ dependencies {
 
     // Test Junit
     testImplementation 'junit:junit:4.+'
+
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3'
 }

@@ -1,4 +1,4 @@
-package com.appchef.api.models
+package com.appchef.api.models.entities
 
 
 import com.squareup.moshi.Json
@@ -6,24 +6,24 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class Article(
-    @Json(name = "author")
+        @Json(name = "author")
     val author: Profile,
-    @Json(name = "body")
+        @Json(name = "body")
     val body: String,
-    @Json(name = "createdAt")
+        @Json(name = "createdAt")
     val createdAt: String,
-    @Json(name = "description")
+        @Json(name = "description")
     val description: String,
-    @Json(name = "favorited")
+        @Json(name = "favorited")
     val favorited: Boolean,
-    @Json(name = "favoritesCount")
+        @Json(name = "favoritesCount")
     val favoritesCount: Int,
-    @Json(name = "slug")
+        @Json(name = "slug")
     val slug: String,
-    @Json(name = "tagList")
+        @Json(name = "tagList")
     val tagList: List<String>,
-    @Json(name = "title")
+        @Json(name = "title")
     val title: String,
-    @Json(name = "updatedAt")
+        @Json(name = "updatedAt")
     val updatedAt: String
 )

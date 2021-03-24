@@ -1,4 +1,4 @@
-package com.appchef.api.models
+package com.appchef.api.models.entities
 
 
 import com.squareup.moshi.Json
